@@ -1,17 +1,19 @@
 
 body {
+	animation: fadeInAnimation ease 5s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
 	background-color:rgb(10, 10, 10);
 	font-family: 'Major Mono Display', monospace;
 	height: 100%;
 	margin: 0;
 	overflow-x: hidden;
 	position: absolute;
-	text-transform: lowercase;
 	width: 100%;
 }
 
 #back {
-	animation: animatedBackground 30s linear infinite;
+	animation: animatedBackground 40s linear infinite;
 	background-image: url("../img/home_page_bg.png");
 	background-repeat: repeat;
 	background-size: calc(3000px * 0.44) calc(1000px * 0.44);	
@@ -23,49 +25,44 @@ body {
 	width: 100%;
 }
 
+/* ----animations---- */
 @keyframes animatedBackground {
 	from { background-position: calc(-3000px * 0.44) 0; }
 	to { background-position: 0 0; }
 }
 
-/*---position containers----*/
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+}
+
+@keyframes moveDown {
+	from { top: 74%; }
+	to { top: 75%; }
+}
+
+/*---position----*/
 #fullname{
-	position: absolute;
+	animation: moveDown ease 1.5s; 
 	left: 50%;
-	transform: translate(-50%, -50%);
+	position: absolute;
 	top: 75%;
+	transform: translate(-50%, -50%);
 	width: 100%;
 }
 
-#nav {
-	margin: 2%;
-	position: absolute;
-	width: 50%;
-}
-
-/*---style containers---*/
+/*---style---*/
 #name {
 	color: #fff;
 	font-size: 5.0rem;
 	letter-spacing: 0.25em;
 	margin-right: 2%;
 	text-align: right;
-}
-
-.navBtn {
-	background: none;
-	border: none;
-	color: white;
-	font-family: 'Major Mono Display', monospace;
-	font-size: 1.5rem;
-	margin-right: 5%;
-	outline: none;
-}
-
-.navBtn:hover {
-	color: #2b59cc;
-	cursor: pointer;
-	transition: all 0.3s;
+	text-transform: lowercase;
 }
 
 /*----gradients-----*/

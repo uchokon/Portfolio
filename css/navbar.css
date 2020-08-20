@@ -1,0 +1,46 @@
+
+/*---position----*/
+.nav {
+	margin: 2%;
+	width: 100%;
+}
+
+/*---style---*/
+.Btn {
+	background: none;
+	border: none;
+	color: #111;
+	float: left;
+	font-size: 1.5rem;
+	margin-right: 5%;
+	outline: none;
+}
+
+.Btn:hover {
+	color:#0074e8;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.whiteText {
+	color: white;
+}
+
+.grayText {
+	color: #888;
+}
+
+.blueText {
+	color: blue;
+}
+
+/* -----animations----- */
+@keyframes moveUpAbsolute {
+	from { top: 1%; }
+	to { top: 0; }
+}
+
+@keyframes moveUpRelative {
+	from { padding-top: 1% }
+	to { padding-top: 0 }
+}
