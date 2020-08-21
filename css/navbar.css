@@ -1,7 +1,9 @@
 
 /*---position----*/
 .nav {
+	animation: moveUpAbsolute ease 1.5s;
 	margin: 2%;
+	position: absolute;
 	width: 100%;
 }
 
@@ -31,7 +33,7 @@
 }
 
 .blueText {
-	color: blue;
+	color: #2190ff;
 }
 
 /* -----animations----- */
@@ -40,7 +42,7 @@
 	to { top: 0; }
 }
 
-@keyframes moveUpRelative {
+/* @keyframes moveUpRelative {
 	from { padding-top: 1% }
 	to { padding-top: 0 }
-}
+} */
