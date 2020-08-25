@@ -1,0 +1,34 @@
+.box {
+    background-color: #ddd;
+    /* margin: 0 5px; */
+    display: inline-block;
+    position: relative;
+}
+  
+.box-container {
+    animation: slidePageContent ease 1.5s;
+    margin: 5%;
+}
+  
+.row {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes slidePageContent {
+    from { margin: 5% 3% }
+    to {margin: 5% 5% }
+}
+
+.info-cont {
+    position: absolute;
+    color: #EEEEEE;
+    top: 0;
+}
+  
+.info-gradient {
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0
+}

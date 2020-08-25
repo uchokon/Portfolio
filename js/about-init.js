@@ -1,18 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     // create main navigation buttons
-    document.querySelector("#navInit").appendChild(initNav);
-	createButtonOnNav('Works', initNav, () => {
-		window.location = './newpage.html';
-	});
-	createButtonOnNav('Resume', initNav,() => {
-		window.open = '', '_blank';
-	});
-	createButtonOnNav('About', initNav, () => {
-		window.location = './about.html';
-	}, 'blueText');
+    addInitNav(initNav, Pages.ABOUT);
+	// create name logo
 
-	document.querySelector("#navInit").appendChild(initNav);
-	createButtonOnNav('ucheoma okonkwo',  initNav, () => {
+	createButtonOnNav('ucheoma okonkwo',  initNav, 'main-btn', () => {
 		window.location = './index.html';
-	}, 'grayText', 'right');
+	}, 'gray-text', 'right');
 });

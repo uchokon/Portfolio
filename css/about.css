@@ -1,45 +1,49 @@
-#aboutInfo {
-    animation: slidePageContent ease 1.5s; 
-    /* background-color: gray; */
-    height: 100%;
-    font-family: 'Raleway', sans-serif;
-    margin: 3% 15%;
+body {
+    margin: 0;
+    overflow-x: hidden;
 }
 
-#topContainer {
+#about-info {
+    animation: slidePageContent ease 1.5s; 
+    /* background-color: gray; */
+    color: var(--main-font-color);
+    height: 900px;
+    font-family: var(--sub-font);
+    font-size: 1.5rem;
+    margin: 4% 15%;
+}
+
+#top-container {
     /* background-color: red; */
     display: flex;
-    height: 35%;
+    height: 300px;
     justify-content: flex-end;
     justify-content: space-between;
     margin-bottom: 1.5%;
 }
 
-#bottomContainer {
-    background-color: #ddd;
+#bottom-container {
+    background-color: #fafafa;
     height: 65%;
     width: 100%;
 }
 
 #pfp {
-    background-color: #ddd;
+    background-color: #fafafa;
+    background-image: url("https://hips.hearstapps.com/countryliving.cdnds.net/17/47/1511194376-cavachon-puppy-christmas.jpg");
+    background-size: cover;
+    background-position: center;
     height: auto;
     width: 30%;
 }
 
 #intro {
-    background-color: #ddd;
+    background-color: #fafafa;
     height: auto;
     width: 68%;
 }
 
-hr {
-    margin-top: 6%;
-    opacity: 10%;
-    width: 50%;   
-}
-
 @keyframes slidePageContent {
-    from { margin: 3% 14% }
-    to {margin: 3% 15% }
+    from { margin: 4% 14% }
+    to {margin: 4% 15% }
 }

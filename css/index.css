@@ -3,8 +3,8 @@ body {
 	animation: fadeInAnimation ease 5s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
-	background-color:rgb(10, 10, 10);
-	font-family: 'Major Mono Display', monospace;
+	background-color: #0a0a0a;
+	font-family: var(--main-font);
 	height: 100%;
 	margin: 0;
 	overflow-x: hidden;

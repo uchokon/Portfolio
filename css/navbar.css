@@ -1,5 +1,23 @@
 
 /*---position----*/
+hr {
+    /* margin-top: 8%; */
+    opacity: 10%;
+    width: 50%;   
+}
+
+#basic-nav {
+	animation: moveUpBasicNav ease 1.5s;
+	height: 10%;
+	margin-bottom: 2%;
+}
+
+#full-nav {
+	animation: moveUpFullNav ease 1.5s;
+	height: 18%;
+	margin-bottom: 2%;
+}
+
 .nav {
 	animation: moveUpAbsolute ease 1.5s;
 	margin: 2%;
@@ -7,32 +25,45 @@
 	width: 100%;
 }
 
-/*---style---*/
-.Btn {
-	background: none;
-	border: none;
-	color: #111;
-	float: left;
-	font-size: 1.5rem;
-	margin-right: 5%;
-	outline: none;
+.sub-nav {
+	animation: moveUpAbsolute ease 1.5s;
+	margin: 7% 2% 2% 2%;
+	position: absolute;
+	width: 100%;
 }
 
-.Btn:hover {
+/*---style---*/
+.btn {
+	color: var(--main-font-color);
+	float: left;
+	
+}
+
+.btn:hover {
 	color:#0074e8;
 	cursor: pointer;
 	transition: all 0.3s;
 }
 
-.whiteText {
+.main-btn {
+	font-size: 1.5rem;
+	margin-right: 5%;
+}
+
+.sub-btn {
+	font-size: 1.125rem;
+	margin-right: 7%;
+}
+
+.white-text {
 	color: white;
 }
 
-.grayText {
-	color: #888;
+.gray-text {
+	color: #ccc;
 }
 
-.blueText {
+.blue-text {
 	color: #2190ff;
 }
 
@@ -42,7 +73,12 @@
 	to { top: 0; }
 }
 
-/* @keyframes moveUpRelative {
-	from { padding-top: 1% }
-	to { padding-top: 0 }
-} */
+@keyframes moveUpFullNav {
+	from { height: 20% }
+	to { height: 18% }
+}
+
+@keyframes moveUpBasicNav {
+	from { height: 12% }
+	to { height: 10% }
+}
