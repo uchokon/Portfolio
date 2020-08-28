@@ -3,7 +3,7 @@ body {
 	animation: fadeInAnimation ease 5s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
-	background-color: #0a0a0a;
+	background-color: #050505;
 	font-family: var(--main-font);
 	height: 100%;
 	margin: 0;
@@ -57,7 +57,7 @@ body {
 
 /*---style---*/
 #name {
-	color: #fff;
+	color: white;
 	font-size: 5.0rem;
 	letter-spacing: 0.25em;
 	margin-right: 2%;
@@ -67,14 +67,14 @@ body {
 
 /*----gradients-----*/
 #gradient1 {
-	background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+	background-image: linear-gradient(rgba(5, 5, 5, 1), rgba(0, 0, 0, 0), rgba(5, 5, 5, 1));
 	height: 50%;
 	position: absolute;
 	width: 100%;
 }
 
 #gradient2 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(5, 5, 5, 1));
 	height: 50%;
 	position: absolute;
 	width: 100%;

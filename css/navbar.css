@@ -1,33 +1,32 @@
 
 /*---position----*/
 hr {
-    /* margin-top: 8%; */
     opacity: 10%;
     width: 50%;   
 }
 
 #basic-nav {
 	animation: moveUpBasicNav ease 1.5s;
-	height: 10%;
+	height: 4.0em;
 	margin-bottom: 2%;
 }
 
 #full-nav {
 	animation: moveUpFullNav ease 1.5s;
-	height: 18%;
+	height: 8.0em;
 	margin-bottom: 2%;
 }
 
 .nav {
 	animation: moveUpAbsolute ease 1.5s;
-	margin: 2%;
+	margin: 2.0em;
 	position: absolute;
 	width: 100%;
 }
 
 .sub-nav {
 	animation: moveUpAbsolute ease 1.5s;
-	margin: 7% 2% 2% 2%;
+	margin: 6.0em 2.0em 2.0em 2.0em;
 	position: absolute;
 	width: 100%;
 }
@@ -47,20 +46,25 @@ hr {
 
 .main-btn {
 	font-size: 1.5rem;
-	margin-right: 5%;
+	margin-right: 3.0em;
 }
 
 .sub-btn {
 	font-size: 1.125rem;
-	margin-right: 7%;
+	margin-right: 5.0em;
 }
 
+/* ------text colors------ */
 .white-text {
 	color: white;
 }
 
+/* .black-text {
+	color: #111;
+} */
+
 .gray-text {
-	color: #ccc;
+	color: #495b6e;
 }
 
 .blue-text {
@@ -74,11 +78,11 @@ hr {
 }
 
 @keyframes moveUpFullNav {
-	from { height: 20% }
-	to { height: 18% }
+	from { height: 9.0em; }
+	to { height: 8.0em; }
 }
 
 @keyframes moveUpBasicNav {
-	from { height: 12% }
-	to { height: 10% }
+	from { height: 5.0em; }
+	to { height: 4.0em; }
 }

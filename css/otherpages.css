@@ -1,13 +1,21 @@
 body {
-	animation: fadeInAnimation ease 5s; 
+	animation: fadeInAnimation ease 3s; 
     animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
 	font-family: var(--main-font);
 	height: 100%;
-	margin: 0;
-	overflow-x: hidden;
+    margin: 0;
+    overflow-x: hidden;
 	position: absolute;
 	width: 100%;
+}
+
+.background {
+    background-attachment: fixed;
+    background-image: url("../img/background_pattern.png");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 75%;
 }
 
 @keyframes fadeInAnimation { 

@@ -4,7 +4,12 @@ let title = document.querySelector("title");
 const Pages = {
 	ABOUT: 'About',
 	INDEX: 'Index',
-	WORKS: 'Works'
+	WORKS: 'Works',
+	COMMISSIONS: 'Commissions',
+	SCHOOL: 'School',
+	PERSONAL: 'Personal',
+	EXERCISES: 'Exercises',
+	ALL: 'All'
 }
 
 function getNavTextClass(forPage) {
@@ -24,11 +29,39 @@ function addInitNav(nav, forPage){
 		window.location = './works.html';
 	}, forPage == Pages.WORKS ? 'blue-text' : navTextClass);
 	createButtonOnNav('Resume', nav, 'main-btn', () => {
-		window.open('' ,'_blank');
+		window.open('./Ucheoma Okonkwo Internship Resume.pdf' ,'_blank');
 	}, navTextClass);
 	createButtonOnNav('About', nav, 'main-btn', () => {
 		window.location = './about.html';
 	}, forPage === Pages.ABOUT ? 'blue-text' : navTextClass);
+
+	if (forPage != Pages.INDEX) {
+		createButtonOnNav('ucheoma okonkwo', nav, 'main-btn', () => {
+			window.location = './index.html';
+		}, 'gray-text', 'right');
+	}
+}
+
+function addInitSubNav(subNav, forPage){
+	let navTextClass = getNavTextClass(forPage);
+
+	document.querySelector("#sub-nav-init").appendChild(subNav);
+
+	createButtonOnNav('Commissions', subNav, 'sub-btn', () => {
+		window.location = './commissions.html';
+	}, forPage == Pages.COMMISSIONS ? 'blue-text' : navTextClass);
+	createButtonOnNav('School', subNav, 'sub-btn', () => {
+		window.location = './school.html';
+	}, forPage == Pages.SCHOOL ? 'blue-text' : navTextClass);
+	createButtonOnNav('Personal', subNav, 'sub-btn', () => {
+		window.location = './personal.html';
+	}, forPage == Pages.PERSONAL ? 'blue-text' : navTextClass);
+	createButtonOnNav('Exercises', subNav, 'sub-btn', () => {
+		window.location = './exercises.html';
+	}, forPage == Pages.EXERCISES ? 'blue-text' : navTextClass);
+	createButtonOnNav('All', subNav, 'sub-btn', () => {
+		//window.location = './works.html';
+	});
 }
 
 function createNavDiv(navClass) {

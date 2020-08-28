@@ -1,34 +1,97 @@
 .box {
-    background-color: #ddd;
+    background-position: center;
+    background-size: 100%;
     /* margin: 0 5px; */
     display: inline-block;
     position: relative;
 }
+
+.gallery-title {
+    color: #2190ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.0rem;
+    position: relative;
+    text-transform: lowercase;
+}
   
 .box-container {
     animation: slidePageContent ease 1.5s;
-    margin: 5%;
+    margin: 3.0em 4.5em;
 }
   
 .row {
-    margin: 10px 0;
+    margin: 1.0em 0;
     display: flex;
     justify-content: space-between;
-}
-
-@keyframes slidePageContent {
-    from { margin: 5% 3% }
-    to {margin: 5% 5% }
 }
 
 .info-cont {
     position: absolute;
     color: #EEEEEE;
-    top: 0;
+    bottom: 0;
+    padding: 1.5em;
+    transition: all 3s;
+    /* margin-top: 50%; */
 }
   
 .info-gradient {
-    background-color: rgba(0,0,0,0.5);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
     position: absolute;
-    top: 0
+    top: 0;
+    transition: all 3s; 
+}
+
+.full-image-link {
+    cursor: pointer;
+    position: absolute;
+    height: 30px;
+    margin: 0.8em;
+    width: 30px;
+    right: 0;
+}
+
+.info-desc {
+    font-family: var(--sub-font);
+}
+
+.fade-in {
+    animation: fadeInAnimation ease 0.5s both;
+}
+
+.fade-out {
+    animation: fadeOutAnimation ease 0.5s both;
+}
+
+.image-increase {
+    animation: increaseImageSize ease 0.5s both;
+}
+
+.image-decrease {
+    animation: decreaseImageSize ease 0.5s both;
+}
+
+@keyframes slidePageContent {
+    from { margin: 3.0em 3.5em }
+    to {margin: 3.0em 4.5em}
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+}
+
+@keyframes increaseImageSize {
+    from{ background-size: 100%; }
+    to { background-size: 105%; }
+}
+
+@keyframes decreaseImageSize {
+    from{ background-size: 105%; }
+    to { background-size: 100%; }
 }
