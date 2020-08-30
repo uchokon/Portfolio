@@ -52,7 +52,7 @@ const School = [
         galleryPieces: [
             createGalleryPiece(createInfo('2019', 'Charcoal', 'An assignment given to replicate a still life using charcoal and erasors.'), createBox('3115px', '2493px', './img/charcoal_objects.jpg')),
             createGalleryPiece(createInfo('2017', 'Adobe Illustrator', 'An assignment given to create a graphic centered around and representative of a single letter.'), createBox('2550px', '3300px', './img/illu.jpg')),
-            createGalleryPiece(createInfo('2019', 'Acrylic Painting', 'An assignment to create a graphic or pattern using all ROYGBV colors.'), createBox('2485px', '2483px', './img/pattern.jpg'))
+            createGalleryPiece(createInfo('2019', 'Acrylic Painting', 'An assignment given to create a graphic or pattern using all ROYGBV colors.'), createBox('2485px', '2483px', './img/pattern.jpg'))
         ]
     },
     {
