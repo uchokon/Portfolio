@@ -36,7 +36,7 @@ const School = [
         height: '373px',
         galleryPieces: [
             createGalleryPiece('', createGalleryTitle('', '300px', 'School')),
-            createGalleryPiece(createInfo('2018', 'Photoshop', 'An assignment given using photoshop to combine and edit a collage of individual images in order to represent a single idea or purpose.'), createBox('1740px', '1095px', './img/splatoon.jpg')),
+            createGalleryPiece(createInfo('2018', 'Photoshop', 'Assignment given using photoshop to combine and edit a collage of individual images in order to represent a single idea or purpose.'), createBox('1740px', '1095px', './img/splatoon.jpg')),
             createGalleryPiece(createInfo('2020', 'Pen And Marker', 'An assignment to use typography (and only typography) to evoke an image of the given word "agile."'), createBox('2261px', '2199px', './img/agile_octopus.jpg'))
         ]
     },
