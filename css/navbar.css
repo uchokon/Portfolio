@@ -1,13 +1,8 @@
 
 /*---position----*/
-hr {
-    opacity: 10%;
-    width: 50%;   
-}
-
 #basic-nav {
 	animation: moveUpBasicNav ease 1.5s;
-	height: 4.0em;
+	height: 4.5em;
 	margin-bottom: 2%;
 }
 
@@ -64,7 +59,7 @@ hr {
 } */
 
 .gray-text {
-	color: #495b6e;
+	color: #ccc;
 }
 
 .blue-text {
@@ -83,6 +78,6 @@ hr {
 }
 
 @keyframes moveUpBasicNav {
-	from { height: 5.0em; }
-	to { height: 4.0em; }
+	from { height: 5.5em; }
+	to { height: 4.5em; }
 }

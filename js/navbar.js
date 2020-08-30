@@ -50,18 +50,22 @@ function addInitSubNav(subNav, forPage){
 	createButtonOnNav('Commissions', subNav, 'sub-btn', () => {
 		window.location = './commissions.html';
 	}, forPage == Pages.COMMISSIONS ? 'blue-text' : navTextClass);
-	createButtonOnNav('School', subNav, 'sub-btn', () => {
+
+	createButtonOnNav('Schoolwork', subNav, 'sub-btn', () => {
 		window.location = './school.html';
 	}, forPage == Pages.SCHOOL ? 'blue-text' : navTextClass);
-	createButtonOnNav('Personal', subNav, 'sub-btn', () => {
-		window.location = './personal.html';
-	}, forPage == Pages.PERSONAL ? 'blue-text' : navTextClass);
+
 	createButtonOnNav('Exercises', subNav, 'sub-btn', () => {
 		window.location = './exercises.html';
 	}, forPage == Pages.EXERCISES ? 'blue-text' : navTextClass);
+
+	createButtonOnNav('Personal', subNav, 'sub-btn', () => {
+		window.location = './personal.html';
+	}, forPage == Pages.PERSONAL ? 'blue-text' : navTextClass);
+
 	createButtonOnNav('All', subNav, 'sub-btn', () => {
-		//window.location = './works.html';
-	});
+		window.location = './all.html';
+	}, forPage == Pages.ALL ? 'blue-text' : navTextClass);
 }
 
 function createNavDiv(navClass) {

@@ -66,13 +66,17 @@ function showInfo(box, info) {
     year.textContent = info.year;
     year.className = 'info-year';
    
-    let infoType = document.createElement('h2');
+    let infoType = document.createElement('h3');
     infoType.textContent = info.type;
     infoType.className = 'info-type';
 
     let infoDesc = document.createElement('span');
     infoDesc.textContent = info.desc;
     infoDesc.className = 'info-desc';
+
+    let infoCategory = document.createElement('h2');
+    infoCategory.textContent = info.category;
+    infoCategory.className = 'info-category';
 
     let gradient = document.createElement('div');
     gradient.className = 'info-gradient';
@@ -91,8 +95,10 @@ function showInfo(box, info) {
     box.appendChild(gradient);
     box.appendChild(infoCont);
     box.appendChild(fullImageLink);
-    
+
+
     infoCont.appendChild(year);
+    infoCont.appendChild(infoCategory);
     infoCont.appendChild(infoType);
     infoCont.appendChild(infoDesc);
   }
@@ -119,11 +125,12 @@ function hideInfo(box) {
   }
 }
 
-function createInfo(year, type, desc) {
+function createInfo(year, type, desc, category) {
   return {
     year,
     type,
-    desc
+    desc,
+    category
   }
 }
 

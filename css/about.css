@@ -1,5 +1,4 @@
 body {
-    background-color: white;
     margin: 0;
     overflow-x: hidden;
 }
@@ -8,43 +7,48 @@ body {
     animation: slidePageContent ease 1.5s; 
     /* background-color: gray; */
     color: var(--main-font-color);
-    height: 900px;
+    /* height: 900px; */
     font-family: var(--sub-font);
     font-size: 1.5rem;
-    margin: 4% 15%;
+    padding: 2.0em 9.0em 3.0em 9.0em;
 }
 
 #top-container {
+    align-items: center;
     /* background-color: red; */
     display: flex;
-    height: 300px;
+    /* height: 35%; */
     justify-content: flex-end;
     justify-content: space-between;
-    margin-bottom: 1.5%;
+    margin-bottom: 1.0em;
 }
 
 #bottom-container {
-    background-color: #fafafa;
-    height: 65%;
-    width: 100%;
+    /* background-color: #fafafa; */
+    font-size: 14pt;
+    /* height: 65%; */
+    line-height: 1.5em;
+    /* width: 97%; */
 }
 
 #pfp {
     background-color: #fafafa;
-    background-image: url("https://hips.hearstapps.com/countryliving.cdnds.net/17/47/1511194376-cavachon-puppy-christmas.jpg");
+    background-image: url("../img/portrait.jpg");
     background-size: cover;
     background-position: center;
-    height: auto;
-    width: 30%;
+    height: 300px;
+    width: 300px;
 }
 
 #intro {
-    background-color: #fafafa;
-    height: auto;
-    width: 68%;
+    /* background-color: #fafafa; */
+    font-size: 14pt;
+    /* height: auto; */
+    line-height: 1.5em;
+    width: 35.0em;
 }
 
 @keyframes slidePageContent {
-    from { margin: 4% 14% }
-    to {margin: 4% 15% }
+    from { padding: 2.0em 8.0em 3.0em 8.0em}
+    to {padding: 2.0em 9.0em 3.0em 9.0em }
 }

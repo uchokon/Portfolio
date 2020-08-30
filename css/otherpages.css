@@ -18,6 +18,21 @@ body {
     background-size: 75%;
 }
 
+#line {
+    margin-bottom: 3.0em;
+}
+
+hr {
+    opacity: 10%;
+    width: 50%;   
+}
+
+.directions {
+    color: #ccc;
+    font-family: var(--sub-font);
+    margin: 0 4.5em;
+}
+
 @keyframes fadeInAnimation { 
     0% { 
         opacity: 0; 
