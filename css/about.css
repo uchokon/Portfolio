@@ -10,7 +10,7 @@ body {
     /* height: 900px; */
     font-family: var(--sub-font);
     font-size: 1.5rem;
-    padding: 2.0em 9.0em 3.0em 9.0em;
+    padding: 2.0rem 9.0rem 3.0rem 9.0rem;
 }
 
 #top-container {
@@ -20,14 +20,14 @@ body {
     /* height: 35%; */
     justify-content: flex-end;
     justify-content: space-between;
-    margin-bottom: 1.0em;
+    margin-bottom: 1.0rem;
 }
 
 #bottom-container {
     /* background-color: #fafafa; */
     font-size: 14pt;
     /* height: 65%; */
-    line-height: 1.5em;
+    line-height: 1.5rem;
     /* width: 97%; */
 }
 
@@ -37,6 +37,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 300px;
+    min-width: 300px;
     width: 300px;
 }
 
@@ -44,11 +45,11 @@ body {
     /* background-color: #fafafa; */
     font-size: 14pt;
     /* height: auto; */
-    line-height: 1.5em;
-    width: 35.0em;
+    line-height: 1.5rem;
+    padding-right: 3.0rem;
 }
 
 @keyframes slidePageContent {
-    from { padding: 2.0em 8.0em 3.0em 8.0em}
-    to {padding: 2.0em 9.0em 3.0em 9.0em }
+    from { padding: 2.0rem 8.0rem 3.0rem 8.0rem}
+    to {padding: 2.0rem 9.0rem 3.0rem 9.0rem }
 }

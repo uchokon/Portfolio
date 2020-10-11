@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             galleryPieces: [
                 createGalleryPiece(createInfo('2020', 'Adobe Illustrator', 'Udemy promt given to create a box design for an unnamed home goods subscription service.', 'Exercise'), createBox('1667px', '1400px', './img/boxes.png')),
                 createGalleryPiece(createInfo('2018', 'PaintTool Sai', 'A digital painting using the face of a model as practice.', 'Personal Project'), createBox('2472px', '2262px', './img/painting_practice.png')),
-                createGalleryPiece('', createGalleryTitle('', '410px', 'Select'))
+                createGalleryPiece('', createGalleryTitle('', '410px', 'Select Works'))
             ]
 		},
 		{

@@ -14,6 +14,7 @@
     font-size: 4.0rem;
     position: relative;
     text-transform: lowercase;
+    padding: 0 20px;
 }
   
 .box-container {
