@@ -1,9 +1,9 @@
 const Commissions = [
     {
-        height: '370px',
+        height: '355px',
         galleryPieces: [
             createGalleryPiece(createInfo('2020', 'PaintTool Sai', 'A headshot commission to draw the character "Genji" from the videogame Overwatch.'), createBox('3100px', '3100px', './img/reynard.png')),
-            createGalleryPiece('', createGalleryTitle('', '300px', 'Commissions')),
+            createGalleryPiece('', createGalleryTitle('', '280px', 'Commissions')),
             createGalleryPiece(createInfo('2020', 'PaintTool Sai', "A headshot commission to draw the commissioner's original character."), createBox('2500px', '2500px', './img/honey.png'))
         ]
     },
@@ -33,68 +33,75 @@ const Commissions = [
 
 const School = [
     {
-        height: '373px',
+        height: '365px',
         galleryPieces: [
             createGalleryPiece('', createGalleryTitle('', '300px', 'School')),
-            createGalleryPiece(createInfo('2018', 'Photoshop', 'Assignment given using photoshop to combine and edit a collage of individual images in order to represent a single idea or purpose.'), createBox('1740px', '1095px', './img/splatoon.jpg')),
-            createGalleryPiece(createInfo('2020', 'Pen And Marker', 'An assignment to use typography (and only typography) to evoke an image of the given word "agile."'), createBox('2261px', '2199px', './img/agile_octopus.jpg'))
+            createGalleryPiece(createInfo('2020', 'JavaScript', 'An assignment given to use the JavaScript Library "p5.js" to combine the techniques used in class for a final project of our choosing.', '', 'https://openprocessing.org/sketch/1032005'), createBox('600px', '321px', './img/op_final.gif')),
+            createGalleryPiece(createInfo('2020', 'Pastels', "An assignment given to combine three analagous colors with the central color's complementary hue to create contrast."), createBox('2157px', '2954px', './img/complementary_colors_project.jpg'))
         ]
     },
     {
-        height: '491px',
+        height: '380px',
         galleryPieces: [
-            createGalleryPiece(createInfo('2018', 'Adobe Illustrator', 'An assignment given to create a character animation using a maximum of 13 frames in adobe illustrator.'), createBox('1024px', '768px', './img/doppio.gif')),
-            createGalleryPiece(createInfo('2019', 'Charcoal and Pastels', 'An assignment that combines an in-person still life with random objects or images using the supplies of our choosing.'), createBox('3159px', '2491px', './img/charcoal_pastel.jpg'))
+            createGalleryPiece(createInfo('2020', 'Acrylic Paint', 'An assignment given to paint a monochromatic still life featuring shoes.'), createBox('2555px', '3399px', './img/shoes.jpg')),
+            createGalleryPiece(createInfo('2018', 'Photoshop', 'An assignment given  to combine, re-color and edit a collage of individual images in order to represent a single idea or purpose.'), createBox('1740px', '1095px', './img/splatoon.jpg')),
+            createGalleryPiece(createInfo('2020', 'JavaScript', 'An assignment given to use the JavaScript Library "p5.js" to create a progessing, moving visual.', '', 'https://openprocessing.org/sketch/989322'), createBox('600px', '598px', './img/op_lily.gif'))
         ]
     },
     {
-        height: '417px',
+        height: '380px',
         galleryPieces: [
             createGalleryPiece(createInfo('2019', 'Charcoal', 'An assignment given to replicate a still life using charcoal and erasors.'), createBox('3115px', '2493px', './img/charcoal_objects.jpg')),
-            createGalleryPiece(createInfo('2017', 'Adobe Illustrator', 'An assignment given to create a graphic centered around and representative of a single letter.'), createBox('2550px', '3300px', './img/illu.jpg')),
-            createGalleryPiece(createInfo('2019', 'Acrylic Painting', 'An assignment given to create a graphic or pattern using all ROYGBV colors.'), createBox('2485px', '2483px', './img/pattern.jpg'))
+            createGalleryPiece(createInfo('2018', 'Adobe Illustrator', 'An assignment given to create a character animation using a maximum of 13 frames in adobe illustrator.'), createBox('1024px', '768px', './img/doppio.gif')),
+            createGalleryPiece(createInfo('2017', 'Adobe Illustrator', 'An assignment given to create a graphic centered around and representative of a single letter.'), createBox('2550px', '3300px', './img/illu.jpg'))
+            //createGalleryPiece(createInfo('2019', 'Acrylic Painting', 'An assignment given to create a graphic or pattern using all ROYGBV colors.'), createBox('2485px', '2483px', './img/pattern.jpg'))
         ]
     },
     {
-        height: '435px',
+        height: '365px',
         galleryPieces: [
-            createGalleryPiece(createInfo('2020', 'Pen and Marker', 'An assignment to use typography (and only typography) to evoke an image of the given word "agile."'), createBox('3465px', '1990px', './img/cheetah.jpg')),
-            createGalleryPiece(createInfo('2019', 'Charcoal', 'An assignment given to create a still life in order to reflect the weight of an object on top of a pillow.'), createBox('2947px', '2457px', './img/pumpkin.jpg'))
+            createGalleryPiece(createInfo('2020', 'Pen and Marker', 'An assignment given to use typography (and only typography) to evoke an image of the given word "agile."'), createBox('3465px', '1990px', './img/cheetah.jpg')),
+            createGalleryPiece(createInfo('2021', 'Mixed Media', "An assignment given to study a contemporary artist's techniques to create our own unique version."), createBox('2448px', '3425px', './img/artist_mentor_project.jpg')),
+            createGalleryPiece(createInfo('2020', 'Pen And Marker', 'An assignment given to use typography (and only typography) to evoke an image of the given word "agile."'), createBox('2261px', '2199px', './img/agile_octopus.jpg'))
+            //createGalleryPiece(createInfo('2019', 'Charcoal', 'An assignment given to create a still life in order to reflect the weight of an object on top of a pillow.'), createBox('2947px', '2457px', './img/pumpkin.jpg'))
         ]
     },
     {
-        height: '515px',
+        height: '520px',
         galleryPieces: [
-            createGalleryPiece(createInfo('2019', 'Acrylic Painting', 'An assignment to create an illussion by painting a large object in a small room.'), createBox('2742px', '2608px', './img/tree_painting.jpg')),
-            createGalleryPiece(createInfo('2018', 'Adobe Illustrator', "An assignment to create a possible poster for the school's coffee house."), createBox('3300px', '5100px', './img/post.jpg')),
-            createGalleryPiece(createInfo('2020', 'Adobe Illustrator', 'An assignment to create a poster that comments on a current, controversial topic.'), createBox('1296px', '1728px', './img/poster.png'))
+            createGalleryPiece(createInfo('2019', 'Acrylic Painting', 'An assignment given to create an illussion by painting a large object in a small room.'), createBox('2742px', '2608px', './img/tree_painting.jpg')),
+            createGalleryPiece(createInfo('2018', 'Adobe Illustrator', "An assignment given to create a possible poster for the school's coffee house."), createBox('3300px', '5100px', './img/post.jpg')),
+            createGalleryPiece(createInfo('2020', 'Adobe Illustrator', 'An assignment given to create a poster that comments on a current, controversial topic.'), createBox('1296px', '1728px', './img/poster.png'))
         ]
     },
     {
-        height: '560px',
+        height: '425px',
         galleryPieces: [
-            createGalleryPiece(createInfo('2019', 'Pen and Marker', 'An assignment to create 25 unique graphics and patterns onto a 5x5 grid.'), createBox('2589px', '2592px', './img/grid.jpg')),
-            createGalleryPiece(createInfo('2019', 'Charcoal and Pastels', 'An assignment to create a still life incorperating a crumpled piece of paper, drappery, and at least 3 other objects of our choosing using monochromatic colors.'), createBox('3137px', '2448px', './img/blue_charcoal.jpg'))
+            createGalleryPiece(createInfo('2019', 'Charcoal and Pastels', 'An assignment given to combine an in-person still life with random objects or images using supplies of our choosing.'), createBox('3159px', '2491px', './img/charcoal_pastel.jpg')),
+            createGalleryPiece(createInfo('2020', 'JavaScript', 'An assignment given to use the JavaScript Library "p5.js" to create an interactive visual.', '', 'https://openprocessing.org/sketch/1019417'), createBox('600px', '342px', './img/op_car.gif'))
+            //createGalleryPiece(createInfo('2019', 'Pen and Marker', 'An assignment to create 25 unique graphics and patterns onto a 5x5 grid.'), createBox('2589px', '2592px', './img/grid.jpg')),
+            //createGalleryPiece(createInfo('2019', 'Charcoal and Pastels', 'An assignment to create a still life incorperating a crumpled piece of paper, drappery, and at least 3 other objects of our choosing using monochromatic colors.'), createBox('3137px', '2448px', './img/blue_charcoal.jpg'))
         ]
     }
 ] 
 
 const Personal = [
     {
-        height: '240px',
+        height: '230px',
         galleryPieces: [
             createGalleryPiece(createInfo('2017', 'Flipnote Studio', 'A short, looping animation.'), createBox('256px', '192px', './img/flipnote.gif')),
             createGalleryPiece(createInfo('2019', 'PaintTool Sai', 'A pixel art animation of an original character.'), createBox('111px', '114px', './img/fibi.gif')),
             createGalleryPiece(createInfo('2017', 'Flipnote Studio', 'A short, looping animation.'), createBox('256px', '192px', './img/cat.gif')),
-            createGalleryPiece('', createGalleryTitle('', '200px', 'Personal'))
+            createGalleryPiece('', createGalleryTitle('', '180px', 'Personal'))
         ]
     },
     {
-        height: '500px',
+        height: '445px',
         galleryPieces: [
             createGalleryPiece(createInfo('2018', 'PaintTool Sai', 'A digital painting using the face of a model as practice.'), createBox('2472px', '2262px', './img/painting_practice.png')),
             createGalleryPiece(createInfo('2019', 'Microsoft Word + PaintTool Sai', "A flyer placed in an event program book for my family's company."), createBox('2550px', '3300px', './img/owm.jpg')),
-            createGalleryPiece(createInfo('2019', 'PaintTool Sai', 'A digital drawing of an original character.'), createBox('1780px', '2613px', './img/Jiao Jiao.png'))
+            createGalleryPiece(createInfo('2021', 'PaintTool Sai', 'A digital drawing based on a personal initiative to redesign the video game character "Bomberman."'), createBox('3100px', '3100px', './img/Bomberman_Redesign.png'))
+            //createGalleryPiece(createInfo('2019', 'PaintTool Sai', 'A digital drawing of an original character.'), createBox('1780px', '2613px', './img/Jiao Jiao.png'))
         ]
     },
     {
@@ -109,10 +116,10 @@ const Personal = [
 
 const Exercises = [
     {
-        height: '420px',
+        height: '405px',
         galleryPieces: [
             createGalleryPiece(createInfo('2020', 'Adobe Illustrator', "Udemy prompt given to create a mascot and logo for a (fake) childrens' dentist office in New York."), createBox('1615px', '1660px', './img/Smile_For_Miles.png')),
-            createGalleryPiece('', createGalleryTitle('', '200px', 'Exercises')),
+            createGalleryPiece('', createGalleryTitle('', '180px', 'Exercises')),
             createGalleryPiece(createInfo('2020', 'Adobe Illustrator', 'Udemy prompt given to create a fun sticker for a nearby bank.'), createBox('1618px', '1590px', './img/bank_sticker.png'))
         ]
     },

@@ -29,7 +29,7 @@ function addInitNav(nav, forPage){
 		window.location = './works.html';
 	}, forPage == Pages.WORKS ? 'blue-text' : navTextClass);
 	createButtonOnNav('Resume', nav, 'main-btn', () => {
-		window.open('./Ucheoma Okonkwo Internship Resume.pdf' ,'_blank');
+		window.open('./Ucheoma Okonkwo Resume 2021.pdf' ,'_blank');
 	}, navTextClass);
 	createButtonOnNav('About', nav, 'main-btn', () => {
 		window.location = './about.html';

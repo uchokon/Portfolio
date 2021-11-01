@@ -1,4 +1,4 @@
-function createBox(width, height, image, info){
+function createBox(width, height, image){
     let box = document.createElement('div');
     box.style.width = width;
     box.style.height = height;
@@ -7,7 +7,7 @@ function createBox(width, height, image, info){
     return box;
 }
 
-function createGalleryTitle(width, height, title, info){
+function createGalleryTitle(width, height, title){
     let box = document.createElement('div');
     box.style.width = width;
     box.style.height = height;
@@ -88,7 +88,12 @@ function showInfo(box, info) {
     let linkString = boxLink.split('"');
 
     let fullImageLink = document.createElement('div');
-    fullImageLink.innerHTML = `<a href=${linkString[1]} target="_blank"><img src="./img/full_size.png" width="30" height="30"></a>`;
+
+    if (info.url == null){
+      fullImageLink.innerHTML = `<a href=${linkString[1]} target="_blank"><img src="./img/full_size.png" width="30" height="30"></a>`;
+    } else {
+      fullImageLink.innerHTML = `<a href=${info.url} target="_blank"><img src="./img/full_size.png" width="30" height="30"></a>`;
+    }
     fullImageLink.className = 'full-image-link';
     fullImageLink.classList.add("fade-in");
 
@@ -101,6 +106,8 @@ function showInfo(box, info) {
     infoCont.appendChild(infoCategory);
     infoCont.appendChild(infoType);
     infoCont.appendChild(infoDesc);
+
+    console.log(box.url);
   }
 }
 
@@ -125,12 +132,13 @@ function hideInfo(box) {
   }
 }
 
-function createInfo(year, type, desc, category) {
+function createInfo(year, type, desc, category, url) {
   return {
     year,
     type,
     desc,
-    category
+    category,
+    url
   }
 }
 
